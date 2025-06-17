@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songbird - Entrar</title>
+    
+    <!-- Google Fonts: A fonte "Changa" é visualmente similar à do design -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <a href="#" class="logo" aria-label="Página Inicial da Songbird"></a>
+            
+            <form class="search-form" role="search">
+                <input type="search" placeholder="Pesquise..." aria-label="Campo de pesquisa">
+            </form>
+            
+            <nav class="main-nav">
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#" class="active">Entrar</a>
+            </nav>
+            
+            <a href="#" class="cart-icon" aria-label="Carrinho de compras">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="login-wrapper" aria-labelledby="login-title">
+            <div class="login-form-container">
+                <form class="login-form">
+                    <h1 id="login-title">Login</h1>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+            <aside class="login-image-placeholder" aria-hidden="true"></aside>
+        </section>
+    </main>
+
+    <div class="gradient-divider"></div>
+
+    
+
+</body>
+</html>
