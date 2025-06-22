@@ -1,11 +1,17 @@
+@font-face {
+    font-family: changa;
+    src: url("../fonts/Changa.ttf");
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: changa, lato;
 }
 
 html, body{
-    font-family: 'Changa', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,6 +21,10 @@ html, body{
 @font-face {
     font-family: antonio;
     src: url("../fonts/Antonio.ttf");
+}
+
+h1, h3{
+    font-family: antonio;
 }
 
 header{
@@ -97,7 +107,7 @@ article .section1{
     display: flex;
 }
 
-article .section1 .section1-box{
+article .section1 .section1Box{
     width: 35%;
     text-align: center;
 }
@@ -113,7 +123,7 @@ article .section1 h1 span{
     color: black;
 }
 
-article .section1 .section1-box button{
+article .section1 .section1Box button{
     padding: 20px 50px;
     border: none;
     font-family: antonio;
@@ -123,37 +133,9 @@ article .section1 .section1-box button{
     color: #fafa22;
 }
 
-article .section1 .section1-box button:hover{
+article .section1 .section1Box button:hover{
     background-color: #401D00;
 }
-
-/*article .section2 .slides{
-    display: flex;
-    width: 200%;
-    overflow: hidden;
-    animation: slide-right 5s linear infinite;
-}
-
-article .section2 figure{
-    position: relative;
-    overflow: hidden;
-    width: 50%;
-}
-
-@keyframes slide-right {
-    0% {
-    left: -100px;
-  }
-  50% {
-    left: 100%;
-  }
-  50.001% {
-    left: -100px;
-  }
-  100% {
-    left: 0;
-  }
-}*/
 
 .section2 {
     overflow: hidden;
@@ -167,25 +149,24 @@ article .section2 figure{
     margin: 50px;
 }
 
-.section2 .slides {
+.slides {
     display: flex;
     width: 200%; /* duas imagens lado a lado */
     animation: slide-left 10s linear infinite;
     position: relative;
     left: 0;
     top: 0;
-}
 
-.section2 figure {
-    width: 50%; /* cada figura ocupa metade */
-    margin: 0;
-    padding: 0;
-}
-
-.section2 figure img {
-    width: 100%;
-    height: auto;
-    display: block;
+    figure {
+        width: 50%; /* cada figura ocupa metade */
+        margin: 0;
+        padding: 0;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
 }
 
 /* Animação de rolagem contínua */
@@ -198,8 +179,97 @@ article .section2 figure{
     }
 }
 
+.section3{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
 
+    figure{
+        width: 50%;
+
+        img{
+            width: 100%;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+    }
+
+    .section3Box{
+        width: 50%;
+        text-align: right;
+        padding: 0px 50px;
+        
+        .title{
+            width: 100%;
+            text-align: right;
+            float: right;
+            margin-bottom: 45px;
+
+            h3{
+                float: right;
+                font-size: 50px;
+                width: 60%;
+            }
+        }
+
+        p{
+            float: right;
+            width: 90%;
+            font-family: 'Changa', sans-serif;
+            font-size: 30px;
+            line-height: 60px;
+        }
+    }
+}
+
+.section4{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+
+    figure{
+        width: 50%;
+
+        img{
+            width: 100%;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+    }
+
+    .section4Box{
+        width: 50%;
+        text-align: left;
+        padding: 0px 50px;
+        
+        .title{
+            width: 100%;
+            text-align: left;
+            float: left;
+            margin-bottom: 45px;
+
+            h3{
+                float: left;
+                font-size: 50px;
+                width: 60%;
+            }
+        }
+
+        p{
+            float: left;
+            width: 90%;
+            font-family: 'Changa', sans-serif;
+            font-size: 30px;
+            line-height: 60px;
+        }
+    }
+}
+
+/* Footer */
 .site-footer {
+    margin-top: 100px;
     /*background-color: #212121;*/
     color: #ffffff;
     width: 100%;
