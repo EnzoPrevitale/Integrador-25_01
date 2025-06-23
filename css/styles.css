@@ -742,6 +742,9 @@ ul {
             label {
                 font-size: 30px;
                 font-family: antonio;
+                text-align: left;
+                margin-left: 15%;
+                margin-bottom: 10px;
                 }
 
             input[type="text"]{
@@ -772,6 +775,10 @@ ul {
                     color: #fafa22;
                     margin: 0 auto;
                     margin-top: 20px;
+
+                    &:hover{
+                        background-color: black;
+                    }
                 }
 
             p{
@@ -779,11 +786,18 @@ ul {
                 margin-top: 20px;
                 font-size: 20px;
                 font-family: antonio;
+                margin-bottom: 20px;
                 }
 
                 a{
                     color: #401D00;
                 }
+            }
+
+            h2{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 25px;
             }
         }
 
