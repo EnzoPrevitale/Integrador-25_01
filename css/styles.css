@@ -756,6 +756,11 @@ ul {
                         margin-bottom: 30px;
                 }
 
+            a{
+                font-family: antonio;
+                font-size: 18px;
+            }
+
             input[type="submit"]{
                     display: block;
                     padding: 10px 100px;
@@ -766,9 +771,21 @@ ul {
                     background-color: #401D00;
                     color: #fafa22;
                     margin: 0 auto;
-                    margin-top: 30px;
+                    margin-top: 20px;
+                }
+
+            p{
+                & , a{
+                margin-top: 20px;
+                font-size: 20px;
+                font-family: antonio;
+                }
+
+                a{
+                    color: #401D00;
                 }
             }
+        }
 
         .box{
         width: 40%;
