@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="semOverflow">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <title>Songbird</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html">
+                    <figure class="logo">
+                        <img src="images/logo.png" alt="Logo da Songbird" />
+                        <figcaption>Songbird</figcaption>
+                    </figure>
+                </a><!--index.html-->
+
+                <div class="center">
+                    <nav class="links">
+                        <a href="dashboard.html">Dashboard</a>
+                        <a href="produtosAdm.html">Produtos</a>
+                        <a href="cadastroAdm.html">Gerenciar administradores</a>
+                    </nav>
+                </div><!--center-->
+            </nav>
+            <div class="gradient"></div>
+        </header>
+
+        <article class="carrinho produtosAdm cadastroProduto">
+            <div class="menu">
+                <form action="produtosAdm.html" method="GET">
+                    <h1>Cadastrar Produto</h1>
+                    <div class="cadastro">
+                        <div class="menuColuna">
+                            <label>Nome</label>
+                            <input type="text" placeholder="Nome">
+
+                            <label for="descricao">Descrição</label>
+                            <textarea id="descricao" placeholder="Descrição do produto"></textarea>
+                        </div><!--menuColuna-->
+
+                        <div class="menuColuna">
+                            <label for="descricao">Faixas</label>
+                            <textarea id="descricao" placeholder="Faixas no disco"></textarea>
+
+                            <label for="descricao">Imagem</label>
+                            <figure>
+                                <img src="images/products/the dark side of the moon.png"/>
+                            </figure>
+                        </div><!--menuColuna-->
+                    </div><!--cadastro-->
+                    <input type="submit" value="CADASTRAR">
+                </form>
+            </div><!--menu-->
+
+
+            <div class="blur">
+                <h2>Administrador</h2>
+                <h2>Estoque</h2>
+
+                <a href="cadastroProduto.html">
+                    <button>Cadastrar Produto</button>
+                </a><!--cadastroproduto.html-->
+                <section class="secaoCarrinho">
+                    <div class="produto">
+                        <figure>
+                            <img src="images/products/the dark side of the moon.png" alt="Capa do álbum The Dark Side of the Moon" />
+                        </figure>
+
+                        <div class="containerInfo">
+                            <p class="titulo">Pink Floyd - The Dark Side of the Moon</p>
+
+                            <div class="acoes">
+                                <div class="fila1">
+                                    <span>Quantidade: 1</span>
+                                    <a href="remover.html">
+                                        <button class="btnRemover">-</button>
+                                    </a><!--remover.html-->
+                                    <a href="editar.html">
+                                        <button class="btnEditar">Editar</button>
+                                    </a><!--editar.html-->
+                                </div>
+
+                                <div class="preco">
+                                    <span class="moeda">R$</span>
+                                    <span class="valor">169</span>
+                                    <span class="centavos">90</span>
+                                </div><!--preco-->
+                            </div><!--acoes-->
+                        </div><!--containerInfo-->
+                    </div><!--produto-->
+
+
+                    <div class="produto">
+                        <figure>
+                            <img src="images/products/the dark side of the moon.png" alt="Capa do álbum The Dark Side of the Moon" />
+                        </figure>
+
+                        <div class="containerInfo">
+                            <p class="titulo">Pink Floyd - The Dark Side of the Moon</p>
+
+                            <div class="acoes">
+                                <div class="fila1">
+                                    <span>Quantidade: 1</span>
+                                    <button class="btnRemover">-</button>
+                                </div>
+
+                                <div class="preco">
+                                    <span class="moeda">R$</span>
+                                    <span class="valor">169</span>
+                                    <span class="centavos">90</span>
+                                </div><!--preco-->
+                            </div><!--acoes-->
+                        </div><!--containerInfo-->
+                    </div><!--produto-->
+
+
+                    <div class="produto">
+                        <figure>
+                            <img src="images/products/the dark side of the moon.png" alt="Capa do álbum The Dark Side of the Moon" />
+                        </figure>
+
+                        <div class="containerInfo">
+                            <p class="titulo">Pink Floyd - The Dark Side of the Moon</p>
+
+                            <div class="acoes">
+                                <div class="fila1">
+                                    <span>Quantidade: 1</span>
+                                    <button class="btnRemover">-</button>
+                                </div>
+
+                                <div class="preco">
+                                    <span class="moeda">R$</span>
+                                    <span class="valor">169</span>
+                                    <span class="centavos">90</span>
+                                </div><!--preco-->
+                            </div><!--acoes-->
+                        </div><!--containerInfo-->
+                    </div><!--produto-->
+                </section><!--secaoCarrinho-->
+            </div><!--blur-->
+        </article>
+
+        <footer>
+            <div class="footerLinks">
+                <div class="footerColumn">
+                    <h3>Produtos</h3>
+                    <ul>
+                        <li><a href="produtos.html#maisVendidos">Mais vendidos</a></li>
+                        <li><a href="produtos.html#novidades">Novidades na loja</a></li>
+                        <li><a href="produtos.html#lancamentos">Lançamentos</a></li>
+                        <li><a href="produtos.html#classicos">Clássicos</a></li>
+                    </ul>
+                </div><!--footerColumn-->
+
+                <div class="footerColumn">
+                    <h3>Sobre nós</h3>
+                    <ul>
+                        <li><a href="sobreNos.html">Quem somos</a></li>
+                        <li><a href="atendimento.html">Atendimento</a></li>
+                    </ul>
+                </div><!--footerColumn-->
+
+                <div class="footerColumn">
+                    <a href="index.html">
+                        <figure>
+                            <img src="images/logo.png" alt="Logo da Songbird."/>
+                        </figure>
+                    </a><!--index.html-->
+                </div><!--footerLogo-->
+            </div><!--footerLink-->
+
+            <div class="copyrightBar">
+                <p>Copyright, Songbird™, 2025. Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </body>
+</html>
