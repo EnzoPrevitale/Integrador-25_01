@@ -151,6 +151,12 @@ ul {
             font-family: antonio;
         }
     }
+
+    figure{
+        img[src="images/rouxinol.png"]{
+            margin-left: 50%;
+        }
+    }
 }
 
 .section2 {
@@ -810,66 +816,87 @@ ul {
     }
 }
 
-/* Footer */
-.site-footer {
+.historia{
+    display: flex;
+    margin: 50px;
+
+    h2{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    figure{
+        img{
+            border-radius: 30px;
+        }
+    }
+}
+
+.missao{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px;
+    text-align: right;
+
+    h2{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 25px;
+        padding: 20px;
+        float: right
+    }
+
+    figure{
+        img{
+            border-radius: 30px;
+        }
+    }
+}
+
+footer{
     margin-top: 100px;
     color: #ffffff;
     width: 100%;
-    background: linear-gradient(180deg,#ffffff 2%, #7f7f7f 7%, #191919 19%, #000000 80%);
-}
+    .footerLinks{
+        background: linear-gradient(180deg,#ffffff 2%, #7f7f7f 7%, #191919 19%, #000000 80%);
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+        padding: 50px;
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
+        .footerColumn {
+            min-width: 180px;
 
-.footer-column {
-    flex: 1;
-    min-width: 180px;
-}
+            h3 {
+                font-size: 30px;
+                margin-bottom: 10px;
+                color: #ffffff;
+                font-family: antonio;
+            }
 
-.footer-column h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-}
+            ul a {
+                color: #b0b0b0;
+                transition: color 0.2s ease;
 
-.footer-column ul li {
-    margin-bottom: 0.7rem;
-}
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
 
-.footer-column ul a {
-    color: #b0b0b0;
-    transition: color 0.2s ease;
-}
-
-.footer-column ul a:hover {
-    color: #ffffff;
-}
-
-.footer-logo {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    flex-basis: 150px;
-}
-
-/* O logo no rodapé tem o fundo da mesma cor do rodapé */
-.footer-logo .logo {
-    background-color: #212121;
-}
-
-.copyright-bar {
-    background-color: #000000;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.8rem;
-    color: #a0a0a0;
-    font-weight: 400;
+    .copyrightBar {
+        background-color: #000000;
+        text-align: center;
+        padding: 1rem;
+        font-size: 15px;
+        color: #a0a0a0;
+        font-weight: 400;
+    }
 }
